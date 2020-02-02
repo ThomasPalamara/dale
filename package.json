@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx lint && yarn build && git add dist"
     }
   },
   "prettier": {
@@ -55,14 +55,14 @@
     "ts-loader": "^6.2.1",
     "tsdx": "^0.12.3",
     "tslib": "^1.10.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "@types/classnames": "^2.2.9",
     "classnames": "^2.2.6",
-    "npm-run-all": "^4.1.5",
     "react-feather": "^2.0.3",
     "rollup-plugin-postcss": "^2.0.5",
     "tailwindcss": "^1.1.4"
